@@ -129,7 +129,7 @@ export default function NavBar() {
           <img
             src="/assets/socially.svg"
             alt="project"
-            className="w-full h-44 object-cover"
+            className="w-full h-44 object-fit"
           />
 
           <div className="p-5 text-white">
