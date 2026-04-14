@@ -8,9 +8,7 @@ export default function NavBar() {
           <section
             className="hover:text-white cursor-pointer"
             onClick={() =>
-              document
-                .getElementById("about")
-                .scrollIntoView({ behavior: "smooth" })
+              document.getElementById("about").scrollIntoView({ behavior: "smooth" })
             }
           >
             About
@@ -19,9 +17,7 @@ export default function NavBar() {
           <section
             className="hover:text-white cursor-pointer"
             onClick={() =>
-              document
-                .getElementById("skills")
-                .scrollIntoView({ behavior: "smooth" })
+              document.getElementById("skills").scrollIntoView({ behavior: "smooth" })
             }
           >
             Skills
@@ -30,9 +26,7 @@ export default function NavBar() {
           <section
             className="hover:text-white cursor-pointer"
             onClick={() =>
-              document
-                .getElementById("project")
-                .scrollIntoView({ behavior: "smooth" })
+              document.getElementById("project").scrollIntoView({ behavior: "smooth" })
             }
           >
             Project
@@ -41,9 +35,7 @@ export default function NavBar() {
           <section
             className="hover:text-white cursor-pointer"
             onClick={() =>
-              document
-                .getElementById("contact")
-                .scrollIntoView({ behavior: "smooth" })
+              document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
             }
           >
             Contact
@@ -53,19 +45,19 @@ export default function NavBar() {
 
       <div className="flex justify-center items-center min-h-screen text-white">
         <div className="flex flex-col items-center gap-4 text-center">
+
+         
           <img
             className="w-40 h-40 object-cover rounded-full border border-white/20 shadow-lg"
-            src="src/assets/pfp.png"
+            src="/assets/pfp.png"
             alt="profile"
           />
 
           <h1 className="text-5xl font-bold">Cristiano Ferreira</h1>
-
           <h2 className="text-white/50 text-lg">Full-stack Developer</h2>
 
           <h3 className="text-white/50 max-w-md text-sm leading-relaxed">
-            Crafting beautiful, scalable web applications with modern
-            technologies.
+            Crafting beautiful, scalable web applications with modern technologies.
           </h3>
 
           <div className="flex gap-4 mt-4">
@@ -80,10 +72,8 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div
-        id="about"
-        className="flex justify-center items-center py-20 text-white"
-      >
+    
+      <div id="about" className="flex justify-center items-center py-20 text-white">
         <div className="flex flex-col items-center text-center max-w-md space-y-4">
           <h1 className="text-5xl font-bold">About</h1>
 
@@ -93,55 +83,37 @@ export default function NavBar() {
           </p>
 
           <p className="text-white/60 text-sm leading-relaxed">
-            When I'm not coding, I explore new technologies and contribute to
-            open-source projects.
+            When I'm not coding, I explore new technologies and contribute to open-source projects.
           </p>
         </div>
       </div>
 
-      <div
-        id="skills"
-        className="flex justify-center items-center py-20 text-white"
-      >
+     
+      <div id="skills" className="flex justify-center items-center py-20 text-white">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+         
           <div className="border border-white/10 rounded-2xl p-6 w-72 shadow-lg backdrop-blur-md hover:scale-105 transition duration-300 text-center">
-            <img
-              src="src/assets/react.png"
-              alt="React"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-
+            <img src="/assets/react.png" alt="React" className="w-16 h-16 mx-auto mb-4" />
             <h2 className="text-xl font-semibold mb-2">React</h2>
-
             <p className="text-white/60 text-sm leading-relaxed">
-              Building fast and interactive user interfaces with reusable
-              components.
+              Building fast and interactive user interfaces with reusable components.
             </p>
           </div>
 
+         
           <div className="border border-white/10 rounded-2xl p-6 w-72 shadow-lg backdrop-blur-md hover:scale-105 transition duration-300 text-center">
-            <img
-              src="src/assets/javascript.png"
-              alt="JavaScript"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-
+            <img src="/assets/javascript.png" alt="JavaScript" className="w-16 h-16 mx-auto mb-4" />
             <h2 className="text-xl font-semibold mb-2">JavaScript</h2>
-
             <p className="text-white/60 text-sm leading-relaxed">
               Core language for dynamic web applications and logic handling.
             </p>
           </div>
 
+         
           <div className="border border-white/10 rounded-2xl p-6 w-72 shadow-lg backdrop-blur-md hover:scale-105 transition duration-300 text-center">
-            <img
-              src="src/assets/tailwind.png"
-              alt="Tailwind"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-
+            <img src="/assets/tailwind.png" alt="Tailwind" className="w-16 h-16 mx-auto mb-4" />
             <h2 className="text-xl font-semibold mb-2">Tailwind CSS</h2>
-
             <p className="text-white/60 text-sm leading-relaxed">
               Utility-first CSS framework for building modern UI quickly.
             </p>
@@ -149,23 +121,22 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div
-        id="project"
-        className="flex justify-center items-center py-20 text-white"
-      >
+      
+      <div id="project" className="flex justify-center items-center py-20 text-white">
         <div className="bg-black/60 border border-white/10 rounded-2xl overflow-hidden shadow-lg w-80 hover:scale-105 transition duration-300">
+
+          
           <img
-            src="src/assets/socially.svg"
+            src="/assets/socially.svg"
             alt="project"
-            className="w-full h-44 object-fit"
+            className="w-full h-44 object-cover"
           />
 
           <div className="p-5 text-white">
             <h2 className="text-xl font-semibold mb-2">Socially</h2>
 
             <p className="text-white/60 text-sm leading-relaxed mb-4">
-              A full-stack application built with React and modern web
-              technologies.
+              A full-stack application built with React and modern web technologies.
             </p>
 
             <button className="w-full bg-white text-black py-2 rounded-xl hover:bg-white/80 transition">
@@ -175,13 +146,10 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div
-        id="contact"
-        className="flex justify-center items-center py-20 text-white"
-      >
+   
+      <div id="contact" className="flex justify-center items-center py-20 text-white">
         <div className="flex flex-col items-center gap-3 text-center">
           <h1 className="text-4xl font-bold">Contact</h1>
-
           <h2 className="text-white/60 text-lg">
             cristiano.ferreira.23mult3@meu.ipta.pt
           </h2>
